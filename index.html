@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Form Giriş</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <nav id="anaSayfa" class="navbar navbar-dark bg-primary navbar-expand-md shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="icons8-source-code-100.png" alt="" width="25" height="25" class="d-inline-block align-text-center">
+            Bootstrap 5 - Formlara Giriş
+          </a>
+        </div>
+    </nav>
+
+    <div class="container-md mt-3">
+        <div class="row">
+            <div class="a col-md-2 ps-3">
+                <div id="list-example" class="btn-group-vertical position-relative">
+                    <a class="btn btn-outline-info" href="#list-item-1">Giriş</a>
+                    <a class="btn btn-outline-info" href="#list-item-2">Hazırlık</a>
+                    <a class="btn btn-outline-info" href="#list-item-3">Label</a>
+                    <a class="btn btn-outline-info" href="#list-item-4">E-mail Form</a>
+                    <a class="btn btn-outline-info" href="#list-item-5">Form Büyüklüğü</a>
+                    <a class="btn btn-outline-info" href="#list-item-6">Pasif Formlar</a>
+                    <a class="btn btn-outline-info" href="#list-item-7">Örnek</a>
+                    <a class="btn btn-outline-info" href="#list-item-8">Dosya Yükleme Formu</a>
+                    <a class="btn btn-outline-info" href="#list-item-9">Renk Seçici</a>
+                  </div>
+            </div>
+            <div class="col-md-9 ps-3">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                    
+                    <div id="list-item-1" class="card text-start border-primary shadow" style="max-width: auto;">
+                        <!--<div class="card-header">Header</div>-->
+                        <div class="card-body text-primary">
+                          <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Primary card title</h5>-->
+                          <p style="font-family: 'Quicksand', sans-serif;" class="card-text">Bootrstrap ile başlamak yerine, öncelikle html formlarını kısaca temel olarak  ele alalım.</br>
+                            Html ile oluşturulan form elemanlarını css ile istediğiniz gibi makyajlayabilirsiniz ancak görüntü güzel olsa bile çoğu zaman kullanışlı olmayacaktır. Her cihazda aynı standart görünüm olmayacaktır.
+                            Bunun önüne geçmenin yollarından biri de bootstrap kullanmaktır. </br>
+                            Aşağıda basit bir form örneği yer almaktadır.
+                          </p>
+                        </div>
+                        <img src="1.png" class="mg-fluid mx-auto d-block" alt="" width="232" height="100">
+                        <div style="font-family: monaco;" class="card-footer bg-info">
+                          <div class="container-sm">
+                            <div class="row">
+                              <iframe src="https://www.codeply.com/v/9i4SAw5Ec9" height="300" scrolling="no" width="700"></iframe>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- 2 -->
+
+                    <div id="list-item-2" class="card text-start border-primary shadow" style="max-width: auto;">
+                      <div style="font-family: 'PT Mono', monospace; color: white;" class="card-header bg-primary">Ön hazırlık</div>
+                      <div class="card-body text-primary">
+                        <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Form Öncesi Yapılacaklar</h5>-->
+                        <p style="font-family: 'Quicksand', sans-serif;" class="card-text">
+                          Bu aşamadan itibaren bootstrap ile basit bir text box oluşturmayı öğreneceğiz.</br>
+                          İlk olarak; container yapısını kullanarak form için alan hazırlayalım. <br>
+                          burada iç içe "div" açıp bootstrap hazır ayarlarının uygulanabilmesi için de bu divlerin "class"larına 
+                          gerekli parametreleri giriyoruz. </br>
+                          Container-sm yazarak mobil cihazlarla uyumlu genişlik elde ederiz. </br>
+                          Row ve col yapılarını da çağırarak en uygun alanı oluşturduk. 
+                        </p>
+                      </div>
+                      <!--<img src="1.png" class="mg-fluid mx-auto d-block" alt="" width="232" height="100">-->
+                      <div style="font-family: monaco;" class="card-footer bg-info">
+                        <div class="container-sm">
+                          <div class="row">
+                            <iframe src="https://www.codeply.com/v/PFUzmfHBSV" height="300" scrolling="no" width="700"></iframe>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                    <hr>
+
+                    <div id="list-item-3" class="card text-start border-primary shadow" style="max-width: auto;">
+                      <div style="font-family: 'PT Mono', monospace; color: white;" class="card-header bg-primary">Label oluşturma</div>
+                      <div class="card-body text-primary">
+                        <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Form Öncesi Yapılacaklar</h5>-->
+                        <p style="font-family: 'Quicksand', sans-serif;" class="card-text">
+                          Şimdi formumuzu oluşturmak için hazırız. </br>
+                          Öğrenmek açısından basit olması için tek bir text box oluşturalım ve bu text box'a ait bir adet label 
+                          yani etiket, 
+                          bir de place holder dediğimiz 
+                          text box içerisinde silik olarak kullanıcıya bilgi veren yazıyı ekleyelim.</br>
+                          Bunun için label etiketinin class'ına "form-label" ibaresini eklememiz yeterli.
+                        </p>
+                      </div>
+                      <img src="2.png" class="mg-fluid mx-auto d-block" alt="" width="232" height="100">
+                      <div style="font-family: monaco;" class="card-footer bg-info">
+                        <div class="container-sm">
+                          <div class="row">
+                            <iframe src="https://www.codeply.com/v/4YMdRYvIcE" height="300" scrolling="no" width="700"></iframe>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                    <hr>
+
+                    <div id="list-item-4" class="card text-start border-primary shadow" style="max-width: auto;">
+                      <div style="font-family: 'PT Mono', monospace; color: white;" class="card-header bg-primary">E-mail formu oluşturma</div>
+                      <div class="card-body text-primary">
+                        <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Form Öncesi Yapılacaklar</h5>-->
+                        <p style="font-family: 'Quicksand', sans-serif;" class="card-text">
+                          Artık bir form oluşturabiliriz. Örnek olması için ben e-mail seçtim. siz password, number veya normal textbox da oluşturabilirsiniz.
+                          Bunun için tek yapmanız gereken type kısmına istediğiniz türü yazmak.</br>
+                          İlk olarak label etiketi açıyoruz. Bunun sebebi ise kullanıcıdan veri alacak olmamız.</br>
+                          type kısmına email yazıyoruz. Az önce de belirttiğim gibi başka seyler de yazılabilir. Password yazmanız durumunda, girilen karakterler nokta olarak gözükecektir;
+                          number yazmanız durumunda ise klavyeden sayı dışında karakter girilmesie izin verilmeyecektir.</br>
+                          class kısmına "form-control" yazmamız çok önemli. Aksi taktirde bootstrap hazır ayarları uygulanmayacaktır.</br>
+                          son olarak placeholder kısmına kullınıcılara bilgi verecek geçici metni girin.</br>
+                          Gördüğünüz bu formun genişliğini değiştirmek için "col-sm-4" ibaresinden kolon ayarlarını yapabilirsiniz.
+                        </p>
+                      </div>
+                      <div class="container-sm">
+                        <label class="form-label">Email address</label>
+                        <input type="email" class="form-control" placeholder="name@example.com">
+                      </div>
+
+                      <hr>
+
+                      <div style="font-family: monaco;" class="card-footer bg-info">
+                        <div class="container-sm">
+                          <div class="row">
+                            <iframe src="https://www.codeply.com/v/Fw6kAAw5K2" height="300" scrolling="no" width="700"></iframe>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                    <hr>
+
+                    <div id="list-item-5" class="card text-start border-primary shadow" style="max-width: auto;">
+                      <div style="font-family: 'PT Mono', monospace; color: white;" class="card-header bg-primary">Formların boyutları</div>
+                      <div class="card-body text-primary">
+                        <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Form Öncesi Yapılacaklar</h5>-->
+                        <p style="font-family: 'Quicksand', sans-serif;" class="card-text">
+                          Bunun için 3 adet parametre bilmeliyiz:</br>
+                          form-control-lg : form-control parametresinin ardından yazılır ve en büyük form buyudur.</br>
+                          form-control : standart boydur tek başına yazılması gerekir.</br>
+                          form-control-sm : en küçük boydur ve form-control parametresinin ardından yazılır.
+                        </p>
+                      </div>
+                        <div class="container-sm">
+                          <input class="form-control form-control-lg p5" type="text" placeholder=".form-control-lg">
+                        <input class="form-control p5" type="text" placeholder="Default input">
+                        <input class="form-control form-control-sm p5" type="text" placeholder=".form-control-sm">
+                        </div>
+                        <hr>
+                      <div style="font-family: monaco;" class="card-footer bg-info">
+                        <div class="container-sm">
+                          <div class="row">
+                            <iframe src="https://codeply.com/v/1FMwvt3qxT" height="300" scrolling="no" width="700"></iframe>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <hr>
+
+                  <div id="list-item-6" class="card text-start border-primary shadow" style="max-width: auto;">
+                    <div style="font-family: 'PT Mono', monospace; color: white;" class="card-header bg-primary">Disabled ve Readonly özellikleri</div>
+                    <div class="card-body text-primary">
+                      <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Form Öncesi Yapılacaklar</h5>-->
+                      <p style="font-family: 'Quicksand', sans-serif;" class="card-text">
+                        Herhangi bir sebepten dolayı formları kullanıma kapatmak için üç adet seçeneğimiz mevcut. </br>
+                        Bunlardan birinde kullanıcı forma tıklayamaz ve yazılar siliktir, diğerinde de kullanıcı forma tıklayamaz ama 
+                        yazılar silik değildir, son seçeneğimizde ise kullanıcı tıklayabilir ancak formu kullanamaz. </br>
+                        Son özellik ne işe yarar diye soracak olursanız kendi fikrimi sunayım. Hover, active gibi css olayları yine de
+                        çalışsın isterseniz kullanabilirsiniz. Görsellik yine güzelleştirilebilir. Aşağıda örnekler sırasıyla sunulmuştur.
+                      </p>
+                    </div>
+                      <div class="container-sm">
+                        <input class="form-control" type="text" placeholder="Disabled input" disabled>
+                        <input class="form-control" type="text" value="Disabled readonly input" disabled readonly>
+                        <input class="form-control" type="text" value="Readonly input here..." readonly>
+                      </div>
+                      <hr>
+                    <div style="font-family: monaco;" class="card-footer bg-info">
+                      <div class="container-sm">
+                        <div class="row">
+                          <iframe src="https://www.codeply.com/v/PTF8TRhG45" height="300" scrolling="no" width="700"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="list-item-7" class="card text-start border-primary shadow" style="max-width: auto;">
+                  <div style="font-family: 'PT Mono', monospace; color: white;" class="card-header bg-primary">Readonly form için örnek</div>
+                  <div class="card-body text-primary">
+                    <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Form Öncesi Yapılacaklar</h5>-->
+                    <p style="font-family: 'Quicksand', sans-serif;" class="card-text">
+                      Yukarıda açıkladığım özelliğin güzel bir örneği aşağıdadır.
+                    </p>
+                  </div>
+                    <div class="container-sm">
+                      <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" value="email@example.com">
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                  <div style="font-family: monaco;" class="card-footer bg-info">
+                    <div class="container-sm">
+                      <div class="row">
+                        <iframe src="https://codeply.com/v/qe2Frt2OBQ" height="300" scrolling="no" width="700"></iframe>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <hr>
+
+              <div id="list-item-8" class="card text-start border-primary shadow" style="max-width: auto;">
+                <div style="font-family: 'PT Mono', monospace; color: white;" class="card-header bg-primary">Dosya yükleme formu</div>
+                <div class="card-body text-primary">
+                  <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Form Öncesi Yapılacaklar</h5>-->
+                  <p style="font-family: 'Quicksand', sans-serif;" class="card-text">
+                    Dosya yüklemek için birden fazla seçenek var. Sırasyıla açıklayalım. </br>
+                    Bunun için öncelikle class kısmına "form-control" yazıyoruz. Ardından etiketimizin sonuna istediğimiz özelliklerin gelmesi için ilgili parametreleri gireceğiz. </br>
+                    Son kısmına bir şey yazmamanız durumunda standart boyutta ve tek dosya seçen form gelecektir. </br>
+                    multiple yazmanız durumunda standart boyutta ve çoklu seçme özellikte olacaktır. </br>
+                    disabled yazmanız durumunda tıklanamaz, pasif durumda olacaktır. </br>
+                    class kısmına "form-control-sm" ibaresini eklerseniz küçük boyutta olacaktır. </br>
+                    class kısmına "form-control-lg" ibaresini eklerseniz büyük boyutta olacaktır.
+                  </p>
+                </div>
+                  <div class="container-sm">
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Default file input example</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="mb-3">
+                      <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                      <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    </div>
+                    <div class="mb-3">
+                      <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+                      <input class="form-control" type="file" id="formFileDisabled" disabled>
+                    </div>
+                    <div class="mb-3">
+                      <label for="formFileSm" class="form-label">Small file input example</label>
+                      <input class="form-control form-control-sm" id="formFileSm" type="file">
+                    </div>
+                    <div>
+                      <label for="formFileLg" class="form-label">Large file input example</label>
+                      <input class="form-control form-control-lg" id="formFileLg" type="file">
+                    </div>
+                  </div>
+                  <hr>
+                <div style="font-family: monaco;" class="card-footer bg-info">
+                  <div class="container-sm">
+                    <div class="row">
+                      <iframe src="https://codeply.com/v/yNQFx6T9bq" height="300" scrolling="no" width="700"></iframe>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="list-item-9" class="card text-start border-primary shadow" style="max-width: auto;">
+              <div style="font-family: 'PT Mono', monospace; color: white;" class="card-header bg-primary">Dosya yükleme formu</div>
+              <div class="card-body text-primary">
+                <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Form Öncesi Yapılacaklar</h5>-->
+                <p style="font-family: 'Quicksand', sans-serif;" class="card-text">
+                  Bootstrap'de standart html renk seçicisine göre daha iyi görünüme sahip ve aynı zamanda daha yetenekli bir 
+                  renk seçici bulunmaktadır. </br>
+                  type kısmına "color" yazarak standart html özelliğini çağırıyoruz. Ardından class kısmına  "form-control"
+                  yazarak temel form özelliklerini çağırıyoruz. Şimdi "form-control-color" parametresini de eklerseniz tam olarak çalışacaktır. </br>
+                  value kısmına başlangıçta hangi rengin seçili olmasını istiyorsanız onun kodunu yazabilirsiniz. </br>
+                  title kısmı ise başlıktır.
+                </p>
+              </div>
+              <input type="color" class="form-control form-control-color ms-3" value="#2980b9" title="Renk seç.">
+                <hr>
+              <div style="font-family: monaco;" class="card-footer bg-info">
+                <div class="container-sm">
+                  <div class="row">
+                    <iframe src="https://codeply.com/v/KyHbvCX1nm" height="300" scrolling="no" width="700"></iframe>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+                </div>
+              </div>
+        </div>
+
+        
+    </div>
+
+    
+
+</body>
+</html>
