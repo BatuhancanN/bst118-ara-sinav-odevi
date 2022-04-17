@@ -16,43 +16,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <nav id="anaSayfa" class="navbar navbar-dark bg-primary navbar-expand-md shadow">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="icons8-source-code-100.png" alt="" width="25" height="25" class="d-inline-block align-text-center">
-            Bootstrap 5 - Formlara Giriş
-          </a>
+    <nav id="anasayfa" class="nav navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a style="font-family: 'Roboto Mono', monospace; font-weight: 700; font-style: italic; font-size: 13pt;" class="navbar-brand">Bootstrap 5 - Formlara Giriş</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul style="font-family: 'Roboto Mono', monospace; font-weight: 200; font-size: 10pt;" class="navbar-nav mx-auto me-0 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#list-item-1">Giriş</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#list-item-2">Hazırlık</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#list-item-3">Label</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#list-item-4">E-Mail Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#list-item-5">Form Büyüklüğü</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#list-item-6">Pasif Formlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#list-item-7">Örnek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#list-item-8">Dosya Formları</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#list-item-9">Renk seçici</a>
+            </li>
+          </ul>
+          
         </div>
+      </div>
     </nav>
 
     <div class="container-md mt-3">
         <div class="row">
-            <div class="a col-md-2 ps-3">
-                <div id="list-example" class="btn-group-vertical position-relative">
-                    <a class="btn btn-outline-info" href="#list-item-1">Giriş</a>
-                    <a class="btn btn-outline-info" href="#list-item-2">Hazırlık</a>
-                    <a class="btn btn-outline-info" href="#list-item-3">Label</a>
-                    <a class="btn btn-outline-info" href="#list-item-4">E-mail Form</a>
-                    <a class="btn btn-outline-info" href="#list-item-5">Form Büyüklüğü</a>
-                    <a class="btn btn-outline-info" href="#list-item-6">Pasif Formlar</a>
-                    <a class="btn btn-outline-info" href="#list-item-7">Örnek</a>
-                    <a class="btn btn-outline-info" href="#list-item-8">Dosya Yükleme Formu</a>
-                    <a class="btn btn-outline-info" href="#list-item-9">Renk Seçici</a>
-                  </div>
-            </div>
-            <div class="col-md-9 ps-3">
-                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <div class="col-md-11 order-first">
+                <div data-bs-offset="0" class="scrollspy-example" tabindex="0">
                     
                     <div id="list-item-1" class="card text-start border-primary shadow" style="max-width: auto;">
                         <!--<div class="card-header">Header</div>-->
                         <div class="card-body text-primary">
                           <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Primary card title</h5>-->
-                          <p style="font-family: 'Quicksand', sans-serif;" class="card-text">Bootrstrap ile başlamak yerine, öncelikle html formlarını kısaca temel olarak  ele alalım.</br>
+                          <p style="font-family: 'Quicksand', sans-serif;" class="card-text">Bootstrap ile başlamak yerine, öncelikle html formlarını kısaca temel olarak  ele alalım.</br>
                             Html ile oluşturulan form elemanlarını css ile istediğiniz gibi makyajlayabilirsiniz ancak görüntü güzel olsa bile çoğu zaman kullanışlı olmayacaktır. Her cihazda aynı standart görünüm olmayacaktır.
                             Bunun önüne geçmenin yollarından biri de bootstrap kullanmaktır. </br>
                             Aşağıda basit bir form örneği yer almaktadır.
@@ -294,7 +321,7 @@
             <hr>
 
             <div id="list-item-9" class="card text-start border-primary shadow" style="max-width: auto;">
-              <div style="font-family: 'PT Mono', monospace; color: white;" class="card-header bg-primary">Dosya yükleme formu</div>
+              <div style="font-family: 'PT Mono', monospace; color: white;" class="card-header bg-primary">Renk seçici</div>
               <div class="card-body text-primary">
                 <!--<h5 style="font-family: 'PT Mono', monospace;" class="card-title">Form Öncesi Yapılacaklar</h5>-->
                 <p style="font-family: 'Quicksand', sans-serif;" class="card-text">
@@ -318,7 +345,13 @@
           </div>
 
                 </div>
-              </div>
+            </div>
+
+            <div class="col-md-1 order-2">
+              <a class="bck btn btn-outline-primary position-fixed rounded-pill" href="#anasayfa" role="button">
+                <img src="icons8-up-arrow-26.png" class="mg-fluid mx-auto d-block" alt="" width="30" height="30">
+              </a>
+            </div>
         </div>
 
         
